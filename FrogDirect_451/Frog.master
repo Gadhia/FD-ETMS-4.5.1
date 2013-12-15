@@ -1,0 +1,75 @@
+﻿<%@ Master Language="VB" CodeFile="Frog.master.vb" Inherits="Frog" %>
+
+<%@ Register src="Controls/MainMenu.ascx" tagname="MainMenu" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+          </asp:ScriptManager>  
+    <table border="0" cellpadding="0" cellspacing="0" width="850">
+<tr><td>
+
+ <table  class = "tbMenu" border =0 width="850px" height = "27px"cellpadding=0 cellspacing=0 >
+  <tr >
+      
+  <td  align=left  valign=middle style="height: 25px" >
+  <div style="padding: 3px 3px 3px 10px">
+     <uc1:MainMenu ID="MainMenu1" runat="server" />
+  </div>   
+  </td>
+  
+</tr>
+
+</table>
+
+</td></tr>
+
+  <tr>
+   <td class ="mpHeader" style="height:145px" valign="Bottom" align ="left" >
+<%--   <table border ="0"  cellspacing ="0" cellpadding="0" ><tr><td>
+             <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+       <h3>Title to replace</h3>
+        </asp:ContentPlaceHolder>
+                </td></tr>
+  </table>--%>
+   </td>
+  </tr>
+  <tr>
+
+    <td  class = "mpMain" align ="left" valign="top">
+  
+       <table border ="0"  cellspacing ="0" cellpadding="5" width="99%" ><tr><td class ="mpMainBG" >
+   <table border ="0"  cellspacing ="0" cellpadding="5" ><tr><td >
+          <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </td></tr>
+  </table>
+         </td></tr>
+  </table>
+ 
+   
+   </td>
+  </tr>
+ 
+  <tr>
+   <td class="mpFooter" style="height:59px" valign ="middle" >
+     <div style="padding: 15px 0px 0px 10px">
+     <span style="font-size: 9pt; color: #FFFFFF">© 2001 - 2009 www.SirajGadhia.com, All
+           Rights Reserved</span>
+           </div> 
+   </td>
+  </tr>
+</table><br /><br />
+ 
+    </div>
+    </form>
+</body>
+</html>
